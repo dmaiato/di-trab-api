@@ -7,14 +7,12 @@ const mensagemDeErroJson = document.getElementById("json-error");
 try {
   var resp = await fetch(urlJson);
   var paises = await resp.json();
+  for (const pais of paises) {
+    countryListElement.insertAdjacentHTML("beforeend", `<option value="${pais.sigla}">${pais.nome_pais}</option>`);
+  }
 } catch (error) {
   mensagemDeErroJson.style.display = "flex";
 }
-
-for (const pais of paises) {
-  countryListElement.insertAdjacentHTML("beforeend", `<option value="${pais.sigla}">${pais.nome_pais}</option>`);
-}
-
 
 countryListElement.onchange = function() {
   let countrySelect = document.getElementById("country-list");
