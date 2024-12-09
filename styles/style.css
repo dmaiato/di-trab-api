@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: rgb(17, 16, 24);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  min-height: 100vh;
+}
+
+.container h1 {
+  color: whitesmoke;
+}
+
+.container .mainButton {
+  color: whitesmoke;
+  width: 220px;
+  height: 70px;
+  font-size: 25px;
+  background-color: rgb(75, 3, 170);
+}
+
+.container .btn:hover {
+  background-color: rgb(44, 3, 109);
+}
+
+.container .btn:active {
+  color: whitesmoke;
+  background-color: rgb(24, 3, 79);
+}
+
+.modal-title {
+  font-size: 18px;
+  color: rgb(20, 20, 20);
+}
+
+.modal-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+select:active input:active {
+  outline: none;
+}
+
+option {
+  font-size: 14px;
+}
+
+.modal-body span {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#country-list{
+  width: 70%;
+  font-size: 16px;
+}
+
+#json-error {
+  margin-top: 10px;
+  font-size: 12px;
+  color: rgb(255, 46, 46);
+  display: none;
+}
+
+#api-error {
+  margin-top: 10px;
+  font-size: 12px;
+  color: rgb(255, 46, 46);
+  display: none;
+}
+
+.input-group label {
+  width: 17%;
+}
+
+.input-group button {
+  width: 23%;
+}
+
+.information {
+  width: 90%;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 425px) {
+
+  #country-list{
+    width: 95%;
+    font-size: 12px;
+  }
+
+  .modal-title {
+    font-size: 16px;
+  }
+
+  .modal-body span {
+    font-size: 16px;
+  }
+
+  .table {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .modal-title {
+    font-size: 14px;
+  }
+
+  .input-group label{
+    font-size: 11px;
+  }
+  .input-group button{
+    font-size: 11px;
+  }
+
+  .input-group input {
+    font-size: 14px;
+  }
+
+  .modal-body span{
+    font-size: 14px;
+  }
+
+  option {
+    font-size: 12px;
+  }
+
+  .table {
+    font-size: 12px;
+  }
+}
